@@ -1805,4 +1805,4 @@ export function buildDossier(dir: string, caps: DossierCaps): Uint8Array {
   const bytes = Buffer.from(canonicalJson(doc), 'utf8');
   if (bytes.length > DOSSIER_MAX_BYTES) throw new DossierError(`buildDossier: the dossier is ${bytes.length} bytes, over the ${DOSSIER_MAX_BYTES} one holds`);
   return new Uint8Array(bytes.buffer, bytes.byteOffset, bytes.length);
-    }
+}
