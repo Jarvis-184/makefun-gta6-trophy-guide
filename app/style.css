@@ -1,0 +1,31 @@
+:root {
+    --bg: #0a0a1a;
+    --card-bg: #15152a;
+    --text: #e0e0ff;
+    --neon-pink: #ff00ff;
+    --neon-teal: #00ffff;
+    --gold: #ffd700;
+    --silver: #c0c0c0;
+    --bronze: #cd7f32;
+    --platinum: #e5e4e2;
+}
+body { background-color: var(--bg); color: var(--text); font-family: sans-serif; margin: 0; padding: 20px; }
+header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid var(--neon-pink); padding-bottom: 20px; }
+h1 { color: var(--neon-teal); text-shadow: 0 0 10px var(--neon-teal); }
+.controls { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-bottom: 30px; }
+#search { padding: 10px; width: 100%; max-width: 400px; background: var(--card-bg); border: 1px solid var(--neon-pink); color: white; border-radius: 5px; }
+.filters { display: flex; gap: 10px; }
+.filter-btn { padding: 8px 15px; background: var(--card-bg); border: 1px solid var(--neon-teal); color: var(--neon-teal); cursor: pointer; border-radius: 5px; }
+.filter-btn.active { background: var(--neon-teal); color: var(--bg); }
+#trophies-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.trophy-card { background: var(--card-bg); padding: 20px; border: 1px solid #333; border-radius: 10px; transition: 0.3s; position: relative; }
+.trophy-card:hover { border-color: var(--neon-pink); }
+.grade { font-size: 0.8em; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
+.grade.platinum { background: var(--platinum); color: black; }
+.grade.gold { background: var(--gold); color: black; }
+.grade.silver { background: var(--silver); color: black; }
+.grade.bronze { background: var(--bronze); color: black; }
+#progress-container { width: 100%; max-width: 600px; margin: 10px auto; }
+#progress-bar-bg { background: #333; height: 15px; border-radius: 7px; overflow: hidden; }
+#progress-bar-fill { height: 100%; background: var(--neon-pink); width: 0%; transition: 0.3s; }
+.checkbox-container { position: absolute; top: 10px; right: 10px; }
