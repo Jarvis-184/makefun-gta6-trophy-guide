@@ -1,0 +1,8 @@
+node_modules
+out
+*.log
+.DS_Store
+screenshots/*.jpg
+!screenshots/1-list.jpg
+!screenshots/2-detail.jpg
+!screenshots/3-progress.jpg
